@@ -2,8 +2,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --dark-background: #1f2937;
+    --header-secondary: #e5e7eb;
 }
 
 body {
     font-family: 'DM Sans', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    /* temporary background */
+    background-color: var(--dark-background);
+    color: #ffffff;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+.navbar .items a {
+    font-size: 18px;
+    color: var(--header-secondary);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.navbar .items a:hover {
+    color: #ffffff;
+    background-color: #0e1826;
 }
