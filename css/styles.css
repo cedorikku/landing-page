@@ -4,6 +4,7 @@
     box-sizing: border-box;
     --dark-background: #1f2937;
     --header-secondary: #e5e7eb;
+    --accent-color: #3882f6;
 }
 
 body {
@@ -33,10 +34,59 @@ body {
     color: var(--header-secondary);
     text-decoration: none;
     padding: 10px;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .navbar .items a:hover {
     color: #ffffff;
     background-color: #0e1826;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    /* temporary background */
+    background-color: var(--dark-background);
+    color: #ffffff;
+}
+
+.hero-container .hero-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+}
+
+.hero-container .hero-left h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-container .hero-left p {
+    color: var(--header-secondary);
+    margin-bottom: 1.25rem;
+}
+
+.hero-container .hero-left button {
+    padding: 10px 0;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.hero-container .hero-left button:hover {
+    cursor: pointer;
+    background-color: #4993f7;
+}
+
+.hero-container .hero-right img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
 }
