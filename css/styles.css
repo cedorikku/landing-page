@@ -5,6 +5,7 @@
     --dark-background: #1f2937;
     --header-secondary: #e5e7eb;
     --accent-color: #3882f6;
+    --text-quote: #1f2937;
 }
 
 body {
@@ -89,4 +90,29 @@ body {
     max-width: 500px;
     height: auto;
     border-radius: 20px;
+}
+
+/* Space for Information */
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem 10%;
+    background-color: var(--header-secondary);
+}
+
+#quote .quotation {
+    font-style: italic;
+    font-size: 36px;
+    color: var(--text-quote);
+    max-width: 1000px;
+    justify-content: center;
+    margin: 1.125rem auto;
+}
+
+#quote .author {
+    font-size: 24px;
+    max-width: 1000px;
+    align-self: flex-end;
 }
