@@ -48,7 +48,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 460px;
     /* temporary background */
     background-color: var(--dark-background);
     color: #ffffff;
@@ -92,6 +92,7 @@ body {
     border-radius: 20px;
 }
 
+/* Space for Information */
 #info {
     display: flex;
     flex-direction: column;
