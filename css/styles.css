@@ -48,10 +48,11 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 460px;
     /* temporary background */
     background-color: var(--dark-background);
     color: #ffffff;
+    flex-wrap: wrap;
+    padding: 88px 0;
 }
 
 .hero-container .hero-left {
@@ -84,6 +85,11 @@ body {
 .hero-container .hero-left button:hover {
     cursor: pointer;
     background-color: #4993f7;
+}
+
+.hero-container .hero-left,
+.hero-container .hero-right {
+    margin: 20px 0;
 }
 
 .hero-container .hero-right img {
