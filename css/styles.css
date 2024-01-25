@@ -216,3 +216,11 @@ body {
     color: var(--accent-color);
     transition: 50ms ease-in-out;
 }
+
+#footer {
+    background-color: var(--dark-background);
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 0;
+    font-size: 1.1rem;
+}
