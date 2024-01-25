@@ -151,14 +151,18 @@ body {
 }
 
 #quote {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 5rem 10%;
     background-color: var(--header-secondary);
 }
 
-#quote .quotation {
+.quote-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    padding: 5rem 10%;
+    margin: 0 auto;
+}
+
+.quote-content .quotation {
     font-style: italic;
     font-size: 36px;
     color: var(--text-quote);
@@ -167,8 +171,9 @@ body {
     margin: 1.125rem auto;
 }
 
-#quote .author {
+.quote-content .author {
     font-size: 24px;
     max-width: 1000px;
     align-self: flex-end;
 }
+
